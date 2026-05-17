@@ -1,6 +1,6 @@
-# Digital-Circuits: Digital Circuits project code. 
+# K-Map Logic Minimization Tool
 
-# Project Problem Statement: 
+# Problem Statement: 
 Create an interactive web simulator which takes truth tables for up to 5 variables and then generates a K-map. 
 Further, using the concepts of Product of sums or sum of products, minimalize the resulting function and display verilog code for the expression obtained and the logical circuit diagram corresponding to the truth table. 
 Verilog code, logical circuit diagrams, test bench and waveforms must be included.
