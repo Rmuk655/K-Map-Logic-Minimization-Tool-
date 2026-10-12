@@ -2,6 +2,17 @@
 
 An interactive browser tool for the Digital Circuits course (EE1202, IIT Hyderabad). Enter a truth table for 1 to 5 variables and it produces the Karnaugh map, minimized Sum-of-Products and Product-of-Sums expressions, and a Verilog module with a matching testbench.
 
+**[Try it live](https://rmuk655.github.io/K-Map-Logic-Minimization-Tool-/)**: no install, runs entirely in the browser.
+
+```mermaid
+flowchart LR
+  A[Truth table<br/>0 / 1 / x] --> B[K-map<br/>Gray-code layout]
+  A --> C[Quine-McCluskey<br/>prime implicants]
+  C --> D[SOP / POS]
+  D --> E[Verilog module]
+  A --> F[Testbench]
+```
+
 ## Features
 
 - Truth-table entry for **1-5 variables**, each row set to `0`, `1` or `x` (don't care).
@@ -12,9 +23,9 @@ An interactive browser tool for the Digital Circuits course (EE1202, IIT Hyderab
 - **Download** of `module.v`, `testbench.v`, `minimized_SOP.txt`, `minimized_POS.txt` and the input table (`kmap_run.txt`).
 - A simple logic-diagram preview of the expression.
 
-## Run it
+## Run it locally
 
-The page loads React, Tailwind and Babel from CDNs, so it needs an internet connection and no build step. Serve the folder over HTTP (browsers often block loading `project.jsx` from `file://`):
+The live version above needs nothing. To run a local copy: the page loads React, Tailwind and Babel from CDNs, so it needs an internet connection and no build step. Serve the folder over HTTP (browsers often block loading `project.jsx` from `file://`):
 
 ```bash
 cd "DC Project"
